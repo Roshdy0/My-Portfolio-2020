@@ -1,0 +1,75 @@
+*{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+.box{
+    height: 100vh;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+.box2{
+    text-align: center;
+}
+.box i{
+    padding: 20px;
+    font-size: 200px;
+    position: relative;
+    border-radius: 50%;
+    color: deepskyblue;
+    border: 10px solid deepskyblue;
+}
+.box i::after{
+    content: '';
+    position: absolute;
+    top: -10px;
+    width: 109%;
+    height: 54%;
+    left: -10px;
+    opacity: 50%;
+    transform: rotate(70deg);
+    transform-origin: bottom;
+    background-color: black;
+    border-radius: 50% 50% 10px 10px;
+}
+.box ul{
+    color: #fff;
+    display: flex;
+    font-size: 40px;
+    list-style-type: none;
+    justify-content: center;
+    text-transform: uppercase;
+}
+.box ul li{
+    width: 90px;
+    height: 50px;
+    opacity: 50%;
+    padding: 10px;
+    margin: 0 10px;
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    background: deepskyblue;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+.box ul li.active{
+    opacity: 1;
+}
+
+.turnOn{ animation: turnOnFan 2s linear infinite; }
+.turnOne{ animation: turnOnFan 1s linear infinite; }
+.turnTwo{ animation: turnOnFan 0.5s linear infinite; }
+.turnThree{ animation: turnOnFan 0.1s linear infinite; }
+@keyframes turnOnFan {
+    from{ transform: rotate(0); }
+    to{ transform: rotate(360deg); }
+}

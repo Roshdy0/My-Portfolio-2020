@@ -3,1031 +3,991 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <title>Furnicom</title>
-        <link rel="stylesheet" href="../../../library/normalize.css">
-        <link rel="stylesheet" href="../../../library/webfonts.min.css">
+        <link rel="stylesheet" href="../../../library/Font Awesome/webfonts.min.css">
         <link rel="stylesheet" href="../../../library/Bootstrap/bootstrap.css">
+        <link rel="stylesheet" href="../../../library/Bootstrap/bootstrap.rtl.css">
         <link rel="stylesheet" href="../../../library/OwlCarousel2-2.3.4/owl.carousel.min.css">
         <link rel="stylesheet" href="../../../library/OwlCarousel2-2.3.4/owl.theme.default.min.css">
-        <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="../img/favicon-16x16.png">
         <link rel="stylesheet" href="../css/furnicom.css">
     </head>
     <body>
-        <!-- Start Setting Box -->
-        <div class="setting">
-            <div class="toggle"><i class="fa fa-gear"></i></div>
+        <!-- Start Header -->
+        <div class="header">
+            <div class="container">
+                <div class="header-top row">
+                    <div class="col-lg-6 col-md-8 col-sm-12 left">
+                        <div class="current">
+                            <p>USD</p>
+                            <p class="d-none">LE</p>
+                            <i class="fa-solid fa-caret-down"></i>
+                        </div>
+                        <div class="language">
+                            <div class="eng">
+                                <img src="../img/england.png" alt="England Language">
+                                <p>english</p>
+                            </div>
+                            <div class="arabic d-none">
+                                <img src="../img/ar-ar.png" alt="Arabic Language">
+                            </div>
+                            <i class="fa-solid fa-caret-down"></i>
+                        </div>
+                        <div class="wishlist">
+                            <i class="fa-solid fa-heart"></i>
+                            <p>wishlist</p>
+                        </div>
+                        <div class="account">
+                            <i class="fa-solid fa-user"></i>
+                            <p>my account</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-4 d-none d-md-flex right">
+                        <div class="cheat">
+                            <i class="fa-regular fa-comment"></i>
+                            <p>Start <span>LIVE CHAT</span> </p>
+                        </div>
+                        <div class="call d-md-none d-lg-flex">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                            <p>Call our customer service at: <span>0111-765-1690</span> </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-middle">
+                    <div class="row d-center">
+                        <div class="col-12 col-md-4 col-lg-3 d-center logo">
+                            <img src="../img/logo.png" alt="Logo Furnicom">
+                        </div>
+                        <div class="col-12 col-md-1 col-lg-4 search">
+                            <form action="#" class="d-flex d-md-none d-center d-lg-flex form">
+                                <i class="fa-solid fa-search"></i>
+                                <input type="search" placeholder="enter your keyword" name="search" id="search">
+                                <button type="submit">search</button>
+                            </form>
+                            <button type="button" class="d-none d-md-flex d-lg-none d-center button">
+                                <i class="fa-solid fa-magnifying-glass d-lg-nonde"></i>
+                            </button>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-3 d-center shipping">
+                            <img src="../img/shipping-bg.png" alt="Car Shipping" srcset="">
+                            <div class="text">
+                                <h6>everyday free shipping</h6>
+                                <p>& no sales tax</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3 col-lg-2 cart">
+                            <img src="../img/cart.png" alt="Cart Car">
+                            <p class="items">0 item(s) - 0.00 $</p>
+                            <p class="title">my cart</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-8 d-none d-lg-block menu">
+                            <ul class="d-center">
+                                <li> <a href="#" class="home"> <i class="fa-solid fa-home"></i> </a> </li>
+                                <li> <a href="#">layouts</a> </li>
+                                <li> <a href="#">features</a> </li>
+                                <li> <a href="#">category</a> </li>
+                                <li> <a href="#">blog</a> </li>
+                                <li> <a href="#">pages</a> </li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6 col-md-9 d-block d-lg-none bars">
+                            <i class="fa fa-bars"></i>
+                        </div>
+                        <div class="col-2 d-none d-lg-block hot">
+                            <button type="button" class="button">hot deals</button>
+                        </div>
+                        <div class="col-6 col-md-3 col-lg-2 icons">
+                            <ul class="menu d-center">
+                                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fa-solid fa-wifi"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-google-plus-g"></i></a></li>
+                                <li><a href="#"><i class="fa-solid fa-podcast"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Header -->
+        
+        <!-- Start Landing Page -->
+        <div class="landing">
+            <div class="owl owl-carousel owl-theme">
+                <div class="slide">
+                    <img src="../img/home-slider.png" alt="home-slider">
+                    <div class="container">
+                        <div class="content">
+                            <div class="d-center">
+                                <p class="small-title">FURNITURE</p>
+                                <p class="small-desc">Survive The Reality Of Everyday Life</p>
+                            </div>
+                            <p class="big-title">COLLECTION</p>
+                            <div class="button"> <a href="#">SHOP NOW</a> </div>
+                        </div>
+					</div>
+                </div>
+                <div class="slide">
+                    <img src="../img/home-slider.png" alt="home-slider">
+                    <div class="container">
+                        <div class="content">
+                            <div class="d-center">
+                                <p class="small-title">FURNITURE</p>
+                                <p class="small-desc">Survive The Reality Of Everyday Life</p>
+                            </div>
+                            <p class="big-title">COLLECTION</p>
+                            <div class="button"> <a href="#">SHOP NOW</a> </div>
+                        </div>
+					</div>
+                </div>
+                <div class="slide">
+                    <img src="../img/home-slider.png" alt="home-slider">
+                    <div class="container">
+                        <div class="content">
+                            <div class="d-center">
+                                <p class="small-title">FURNITURE</p>
+                                <p class="small-desc">Survive The Reality Of Everyday Life</p>
+                            </div>
+                            <p class="big-title">COLLECTION</p>
+                            <div class="button"> <a href="#">SHOP NOW</a> </div>
+                        </div>
+					</div>
+                </div>
+            </div>
+        </div>
+        <!-- End Landing Page -->
+
+        <!-- Start Section Deals Days -->
+        <div class="deals-day">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 deals">
+                        <div class="title">
+                            <p>
+                                deals of
+                                <span>the days</span>
+                            </p>
+                        </div>
+                        <p class="desc"> Mauris ut tincidunt nisi, id auctor libero. Etiam aliquet felis et consectetur faucibus. Praesent aliquam, lec tempus consequat, felis quam venenatis ligula </p>
+                        <div class="images">
+                            <img src="../img/room.png" alt="room">
+                            <img src="../img/room2.png" alt="room">
+                            <img src="../img/room3.png" alt="room">
+                            <img src="../img/room4.png" alt="room">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-8 slider">
+                        <div class="owl owl-carousel owl-theme">
+                            <div class="slide d-center">
+                                <div class="timer">
+                                    <div class="countdown">
+                                        <p class="time">00</p>
+                                        <p class="text">days</p>
+                                    </div>
+                                    <div class="countdown">
+                                        <p class="time">00</p>
+                                        <p class="text">hours</p>
+                                    </div>
+                                    <div class="countdown">
+                                        <p class="time">00</p>
+                                        <p class="text">mins</p>
+                                    </div>
+                                    <div class="countdown">
+                                        <p class="time">00</p>
+                                        <p class="text">secs</p>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <img src="../img/product.png" alt="product">
+                                    <p class="name">Donec vel venenatis</p>
+                                    <p class="cash">$1115.00<span>$142.00</span></p>
+                                    <div class="rating">
+                                        <i class="active fa-solid fa-star"></i>
+                                        <i class="active fa-solid fa-star"></i>
+                                        <i class="active fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                    <p class="label"> new </p>
+                                </div>
+                            </div>
+                            <div class="slide d-center">
+                                <div class="timer">
+                                    <div class="countdown">
+                                        <p class="time">00</p>
+                                        <p class="text">days</p>
+                                    </div>
+                                    <div class="countdown">
+                                        <p class="time">00</p>
+                                        <p class="text">hours</p>
+                                    </div>
+                                    <div class="countdown">
+                                        <p class="time">00</p>
+                                        <p class="text">mins</p>
+                                    </div>
+                                    <div class="countdown">
+                                        <p class="time">00</p>
+                                        <p class="text">secs</p>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <img src="../img/product1.jpg" alt="product">
+                                    <p class="name">Donec vel venenatis</p>
+                                    <p class="cash">$1115.00<span>$142.00</span></p>
+                                    <div class="rating">
+                                        <i class="active fa-solid fa-star"></i>
+                                        <i class="active fa-solid fa-star"></i>
+                                        <i class="active fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                    <p class="label"> new </p>
+                                </div>
+                            </div>
+                            <div class="slide d-center">
+                                <div class="timer">
+                                    <div class="countdown">
+                                        <p class="time">00</p>
+                                        <p class="text">days</p>
+                                    </div>
+                                    <div class="countdown">
+                                        <p class="time">00</p>
+                                        <p class="text">hours</p>
+                                    </div>
+                                    <div class="countdown">
+                                        <p class="time">00</p>
+                                        <p class="text">mins</p>
+                                    </div>
+                                    <div class="countdown">
+                                        <p class="time">00</p>
+                                        <p class="text">secs</p>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <img src="../img/product2.png" alt="product">
+                                    <p class="name">Donec vel venenatis</p>
+                                    <p class="cash">$1115.00<span>$142.00</span></p>
+                                    <div class="rating">
+                                        <i class="active fa-solid fa-star"></i>
+                                        <i class="active fa-solid fa-star"></i>
+                                        <i class="active fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                    <p class="label"> new </p>
+                                </div>
+                            </div>
+                            <div class="slide d-center">
+                                <div class="timer">
+                                    <div class="countdown">
+                                        <p class="time">00</p>
+                                        <p class="text">days</p>
+                                    </div>
+                                    <div class="countdown">
+                                        <p class="time">00</p>
+                                        <p class="text">hours</p>
+                                    </div>
+                                    <div class="countdown">
+                                        <p class="time">00</p>
+                                        <p class="text">mins</p>
+                                    </div>
+                                    <div class="countdown">
+                                        <p class="time">00</p>
+                                        <p class="text">secs</p>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <img src="../img/product4.png" alt="product">
+                                    <p class="name">Donec vel venenatis</p>
+                                    <p class="cash">$1115.00<span>$142.00</span></p>
+                                    <div class="rating">
+                                        <i class="active fa-solid fa-star"></i>
+                                        <i class="active fa-solid fa-star"></i>
+                                        <i class="active fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                    <p class="label"> new </p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-12 popular">
+                        <div class="title">
+                            <p>popular <span>product</span> </p>
+                        </div>
+                        <div class="products">
+                            <div class="product d-center">
+                                <img src="../img/product35.png" alt="product35">
+                                <div class="detalis">
+                                    <p class="name">Donec vel venenatis</p>
+                                    <p class="price">$110.00<span>$150.00</span></p>
+                                    <div class="rating d-center">
+                                        <i class="active fa-regular fa-star"></i>
+                                        <i class="active fa-regular fa-star"></i>
+                                        <i class="active fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product d-center">
+                            <img src="../img/product36.png" alt="product35">
+                                <div class="detalis">
+                                    <p class="name">Donec vel venenatis</p>
+                                    <p class="price">$110.00<span>$150.00</span></p>
+                                    <div class="rating d-center">
+                                        <i class="active fa-regular fa-star"></i>
+                                        <i class="active fa-regular fa-star"></i>
+                                        <i class="active fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product d-center">
+                                <img src="../img/product37.png" alt="product35">
+                                <div class="detalis">
+                                    <p class="name">Donec vel venenatis</p>
+                                    <p class="price">$110.00<span>$150.00</span></p>
+                                    <div class="rating d-center">
+                                        <i class="active fa-regular fa-star"></i>
+                                        <i class="active fa-regular fa-star"></i>
+                                        <i class="active fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Start Section Deals Days -->
+    
+        <!-- Start Banner -->
+        <div class="banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4"> <img src="../img/collection.png" alt="collection"></div>
+                    <div class="col-4"> <img src="../img/banner3.png" alt="Banner"></div>
+                    <div class="col-4"> <img src="../img/banner2.png" alt="Banner"></div>
+                </div>
+            </div>
+        </div>
+        <!-- End Banner -->
+
+        <!-- Start Featured Products -->
+        <div class="featured-products section">
+            <div class="container">
+                    <div class="title-section">
+                        <p>Featured <span>products</span></p>
+                    </div>
+                    <div class="owl owl-carousel owl-theme">
+                        <div class="slide">
+                            <div class="image">
+                                <a href="#">
+                                    <img src="../img/product51.png" alt="Product 51">
+                                </a>
+                            </div>
+                            <div class="info">
+                                <a href="#" class="name">Curabitur turpis orci</a>
+                                <p class="price">$110.00 <span>$200.00</span></p>
+                                <div class="rating">
+                                    <i class="active fa-solid fa-star"></i>
+                                    <i class="active fa-solid fa-star"></i>
+                                    <i class="active fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="group">
+                                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                <a href="#">add to cart</a>
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="image">
+                                <a href="#">
+                                    <img src="../img/product52.png" alt="Product 51">
+                                </a>
+                            </div>
+                            <div class="info">
+                                <a href="#" class="name">Curabitur turpis orci</a>
+                                <p class="price">$110.00 <span>$200.00</span></p>
+                                <div class="rating">
+                                    <i class="active fa-solid fa-star"></i>
+                                    <i class="active fa-solid fa-star"></i>
+                                    <i class="active fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="group">
+                                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                <a href="#">add to cart</a>
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="image">
+                                <a href="#">
+                                    <img src="../img/product53.jpg" alt="Product 51">
+                                </a>
+                            </div>
+                            <div class="info">
+                                <a href="#" class="name">Curabitur turpis orci</a>
+                                <p class="price">$110.00 <span>$200.00</span></p>
+                                <div class="rating">
+                                    <i class="active fa-solid fa-star"></i>
+                                    <i class="active fa-solid fa-star"></i>
+                                    <i class="active fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="group">
+                                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                <a href="#">add to cart</a>
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="image">
+                                <a href="#">
+                                    <img src="../img/product39.png" alt="Product 51">
+                                </a>
+                            </div>
+                            <div class="info">
+                                <a href="#" class="name">Curabitur turpis orci</a>
+                                <p class="price">$110.00 <span>$200.00</span></p>
+                                <div class="rating">
+                                    <i class="active fa-solid fa-star"></i>
+                                    <i class="active fa-solid fa-star"></i>
+                                    <i class="active fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="group">
+                                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                <a href="#">add to cart</a>
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+        <!-- Start Information Shipping -->
+        <div class="information section">
             <div class="">
-                <div class="option">
-                    <h4>colors</h4>
-                    <ul class="color-list">
-                        <li class="active" data-color="#beae59"></li>
-                        <li data-color="#d9b700"></li>
-                        <li data-color="#ccc394"></li>
-                        <li data-color="#484223"></li>
-                        <li data-color="#13b5e6"></li>                    
+                <div class="row">
+                    <div class="col-sm-12 col-md-4 box">
+                        <div class="d-center">
+                            <img src="../img/infomation-image.png" alt="Information Image"> 
+                            <div class="text">
+                                <p class="h4">free shipping</p>
+                                <p class="des">Vestibulum dolor purus porta</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4 box arrows">
+                        <div class="d-center"> <img src="../img/infomation-image2.png" alt="Information Image"> </div>
+                            <div class="text">
+                                <p class="h4">MONEY BACK GUARANTEE</p>
+                                <p class="des">Vestibulum dolor purus porta</p>
+                            </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4 box">
+                        <div class="d-center">
+                            <img src="../img/infomation-image3.png" alt="Information Image">
+                            <div class="text">
+                                <p class="h4">24 HOURS SUPPORT</p>
+                                <p class="des">Vestibulum dolor purus porta</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Information Shipping -->
+
+        <!-- Start Best Seller -->
+        <div class="featured-products section">
+            <div class="container">
+                    <div class="title-section">
+                        <p>Best <span>Seller</span></p>
+                    </div>
+                    <div class="owl owl-carousel owl-theme">
+                        <div class="slide">
+                            <div class="image">
+                                <a href="#">
+                                    <img src="../img/product.png" alt="Product 51">
+                                </a>
+                            </div>
+                            <div class="info">
+                                <a href="#" class="name">Curabitur turpis orci</a>
+                                <p class="price">$110.00 <span>$200.00</span></p>
+                                <div class="rating">
+                                    <i class="active fa-solid fa-star"></i>
+                                    <i class="active fa-solid fa-star"></i>
+                                    <i class="active fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="group">
+                                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                <a href="#">add to cart</a>
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="image">
+                                <a href="#">
+                                    <img src="../img/product2.png" alt="Product 51">
+                                </a>
+                            </div>
+                            <div class="info">
+                                <a href="#" class="name">Curabitur turpis orci</a>
+                                <p class="price">$110.00 <span>$200.00</span></p>
+                                <div class="rating">
+                                    <i class="active fa-solid fa-star"></i>
+                                    <i class="active fa-solid fa-star"></i>
+                                    <i class="active fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="group">
+                                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                <a href="#">add to cart</a>
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="image">
+                                <a href="#">
+                                    <img src="../img/product4.png" alt="Product 51">
+                                </a>
+                            </div>
+                            <div class="info">
+                                <a href="#" class="name">Curabitur turpis orci</a>
+                                <p class="price">$110.00 <span>$200.00</span></p>
+                                <div class="rating">
+                                    <i class="active fa-solid fa-star"></i>
+                                    <i class="active fa-solid fa-star"></i>
+                                    <i class="active fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="group">
+                                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                <a href="#">add to cart</a>
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="image">
+                                <a href="#">
+                                    <img src="../img/product5.jpg" alt="Product 51">
+                                </a>
+                            </div>
+                            <div class="info">
+                                <a href="#" class="name">Curabitur turpis orci</a>
+                                <p class="price">$110.00 <span>$200.00</span></p>
+                                <div class="rating">
+                                    <i class="active fa-solid fa-star"></i>
+                                    <i class="active fa-solid fa-star"></i>
+                                    <i class="active fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="group">
+                                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                <a href="#">add to cart</a>
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="image">
+                                <a href="#">
+                                    <img src="../img/product7.jpg" alt="Product 51">
+                                </a>
+                            </div>
+                            <div class="info">
+                                <a href="#" class="name">Curabitur turpis orci</a>
+                                <p class="price">$110.00 <span>$200.00</span></p>
+                                <div class="rating">
+                                    <i class="active fa-solid fa-star"></i>
+                                    <i class="active fa-solid fa-star"></i>
+                                    <i class="active fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="group">
+                                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                <a href="#">add to cart</a>
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="image">
+                                <a href="#">
+                                    <img src="../img/product9.jpg" alt="Product 51">
+                                </a>
+                            </div>
+                            <div class="info">
+                                <a href="#" class="name">Curabitur turpis orci</a>
+                                <p class="price">$110.00 <span>$200.00</span></p>
+                                <div class="rating">
+                                    <i class="active fa-solid fa-star"></i>
+                                    <i class="active fa-solid fa-star"></i>
+                                    <i class="active fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="group">
+                                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                <a href="#">add to cart</a>
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="image">
+                                <a href="#">
+                                    <img src="../img/product35.png" alt="Product 51">
+                                </a>
+                            </div>
+                            <div class="info">
+                                <a href="#" class="name">Curabitur turpis orci</a>
+                                <p class="price">$110.00 <span>$200.00</span></p>
+                                <div class="rating">
+                                    <i class="active fa-solid fa-star"></i>
+                                    <i class="active fa-solid fa-star"></i>
+                                    <i class="active fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="group">
+                                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                <a href="#">add to cart</a>
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <!-- Start Best Seller -->
+
+        <!-- Start Customer Opinion -->
+        <div class="customer d-center">
+            <div class="container">
+                <div class="owl owl-carousel owl-theme">
+                    <div class="d-center box">
+                        <div class="image"> <img src="../img/avatar.png" alt="avatar"> </div>
+                        <div class="text">
+                            <i class="fa-solid fa-quote-left"></i>
+                            <p class="des">Fusce lorem ante, condimentum in massa, posuere bibendum. Maecenas euismod vulputate eu rhoncus. Pellentesque commodo posuere maximus. Phasellus pellentesque pellentesque facilisis.</p>
+                            <a href="#">JOHN DOE - Designer</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Customer Opinion -->
+
+        <!-- Start Section Categories -->
+        <div class="categories section">
+            <div class="container">
+                <div class="row">
+                    <div class="col first">
+                        <div class="image1">
+                            <img src="../img/category1.jpg" alt="category 1">
+                        </div>
+                        <div class="image2">
+                            <img src="../img/category3.png" alt="category 3">
+                        </div>
+                    </div>
+                    <div class="col second">
+                        <div class="text">
+                            <div class="title-section">
+                                <p>hot <span>categories</span></p>
+                            </div>
+                            <p class="des">Duis euismod eu nibh at pharetra. Vivamus placerat ac metus et placerat. Nulla molestie massa id est posuere, maximus hendrerit est rhoncus.</p>
+                            <div class="button">
+                                <a href="#">view all categories</a>
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img src="../img/category4.png" alt="category3">
+                        </div>
+                    </div>
+                    <div class="col three">
+                        <div class="image">
+                            <img src="../img/category2.png" alt="category 4">
+                        </div>
+                        <div class="image">
+                            <img src="../img/category5.png" alt="category 5">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Section Categories -->
+
+        <!-- Start Section Blogs -->
+        <div class="blog section">
+            <div class="container">
+                <div class="title-section">
+                    <p>latest <span>blog</span></p>
+                </div>
+                <div class="owl owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-6 image">
+                                <img src="../img/blog1.png" alt="Blog Image">
+                            </div>
+                            <div class="col-6 text">
+                                <p class="name">Curabitur lectus Tincidunt</p>
+                                <p class="desc">Aenean vel elit lectus pretium efficitur. Praesent sollicitudin odio eget nunc tincidunt, sed faucibus enim tincidunt.</p>
+                                <div class="button d-center">
+                                    <a href="#" class="button">
+                                        read more
+                                        <i class="fa-solid fa-angles-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 text">
+                                <p class="name">Curabitur lectus Tincidunt</p>
+                                <p class="desc">Aenean vel elit lectus pretium efficitur. Praesent sollicitudin odio eget nunc tincidunt, sed faucibus enim tincidunt.</p>
+                                <div class="button d-center">
+                                    <a href="#" class="button">
+                                        read more
+                                        <i class="fa-solid fa-angles-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6 image">
+                                <img src="../img/blog2.png" alt="Blog Image">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-6 image">
+                                <img src="../img/blog3.png" alt="Blog Image">
+                            </div>
+                            <div class="col-6 text">
+                                <p class="name">Curabitur lectus Tincidunt</p>
+                                <p class="desc">Aenean vel elit lectus pretium efficitur. Praesent sollicitudin odio eget nunc tincidunt, sed faucibus enim tincidunt.</p>
+                                <div class="button d-center">
+                                    <a href="#" class="button">
+                                        read more
+                                        <i class="fa-solid fa-angles-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 text">
+                                <p class="name">Curabitur lectus Tincidunt</p>
+                                <p class="desc">Aenean vel elit lectus pretium efficitur. Praesent sollicitudin odio eget nunc tincidunt, sed faucibus enim tincidunt.</p>
+                                <div class="button d-center">
+                                    <a href="#" class="button">
+                                        read more
+                                        <i class="fa-solid fa-angles-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6 image">
+                                <img src="../img/blog4.png" alt="Blog Image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Start Section Blogs-->
+
+        <!-- Start Featured brands -->
+        <div class="brands">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3 left">
+                        <div class="title-section">
+                            <p>featured <span>brands</span></p>
+                        </div>
+                        <div class="img"><img src="../img/brand1.png" alt="Brand 1"></div>
+                        <div class="img"><img src="../img/brand3.png" alt="Brand 4"></div>
+                    </div>
+                    <div class="col-6 center">
+                        <div class="img"><img src="../img/brand-bg.png" alt="Brand"></div>
+                    </div>
+                    <div class="col-3 right">
+                        <div class="img"><img src="../img/brand4.png" alt=""></div>
+                        <div class="img"><img src="../img/brand-5.jpg" alt=""></div>
+                        <div class="img"><img src="../img/brand-6.jpg" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Featured brands -->
+
+        <!-- Start Section Newletter -->
+        <div class="new-letter">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-6 text">
+                        <p class="h4">NEED HELP? CALL OUR AWARD-WINNING </p>
+                        <p class="number">
+                            SUPPORT TEAM 24/7 AT 
+                            <a href="#">+20-111-765-1690</a>
+                        </p>
+                    </div>
+                    <div class="col-12 col-lg-6 mail">
+                        <form action="#">
+							<div class="form">
+                                <i class="fa-regular fa-envelope"></i>
+								<input type="text" class="form-control" name="email" placeholder="Enter your email address">
+								<div class="button">
+                                    <a href="#">SUBSCRIBE</a>
+                                </div>
+							</div>
+							</form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Section Newletter -->
+        <div class="footer">
+            <div class="row">
+                <div class="col-3 service">
+                    <p class="title"> Our Service</p>
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-caret-right"></i>
+                            <a href="">Delivery Information</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-caret-right"></i>
+                            <a href="">Returns</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-caret-right"></i>
+                            <a href="">Terms & Conditions</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-caret-right"></i>
+                            <a href="">Shipping & Refund</a>
+                        </li> 
+                        <li>
+                            <i class="fa-solid fa-caret-right"></i>
+                            <a href="">Specials</a>
+                        </li> 
+                    </ul>
+                </div>
+                <div class="col-3 extras">
+                    <p class="title"> Extras</p>
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-caret-right"></i>
+                            <a href="">Contact Us</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-caret-right"></i>
+                            <a href="">Returns</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-caret-right"></i>
+                            <a href="">special</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-caret-right"></i>
+                            <a href="">brands</a>
+                        </li> 
+                        <li>
+                            <i class="fa-solid fa-caret-right"></i>
+                            <a href="">gift voucher</a>
+                        </li> 
+                    </ul>
+                </div>
+                <div class="col-3 account">
+                    <p class="title"> my account</p>
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-caret-right"></i>
+                            <a href="">my order</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-caret-right"></i>
+                            <a href="">My credit slips</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-caret-right"></i>
+                            <a href="">My addresses</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-caret-right"></i>
+                            <a href="">My personal info</a>
+                        </li> 
+                    </ul>
+                </div>
+                <div class="col-3 contact">
+                    <p class="title"> contact us</p>
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-location-arrow"></i>
+                            <a href="#">Egypt / Cairo</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-mobile-button"></i>
+                            <a href="#">+20-111-765-1690</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <a href="">roshdy.mammdouh</a>
+                        </li>
+                        <li>
+                            <img src="../img/paymen.png" alt="paymen">
+                        </li>
                     </ul>
                 </div>
             </div>
-        </div>
-        <!-- End Setting Box -->
-        
-        <!-- Start Nav Bar -->
-        <div class="header">
-            <div class="container">
-                <div class="top centerByFlex">
-                    <div class="container"> 
-                        <div class="row">
-                            <div class="col-lg-6 col-md-9 col-sm-12">
-                                <div class="header-user"> 
-                                    <ul>
-                                        <li>
-                                            <a class="smooth dropdown-toggle">USD</a>
-                                            <ul class="dropdown-menu">
-                                                <li>
-                                                    <a href="#" class="smooth">USD</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#" class="smooth">UER</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <img src="../img/england.png" class="lang-img" alt="">
-                                            <a class="smooth dropdown-toggle two" title=""><span class="hidden-md hidden-sm hidden-xs">English</span></a>
-                                            <ul class="dropdown-menu two">
-                                                <li>
-                                                    <a href="#" class="smooth" title="">
-                                                        <span><img src="../img/ar-ar.png" alt="" class="lang-img"></span>
-                                                        English
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#" class="smooth" title="">
-                                                        <span><img src="../img/england.png" alt="" class="lang-img"></span>
-                                                        Arabic
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="smooth" title="">
-                                                <i class="fa fa-user" aria-hidden="true"></i>
-                                                My Account
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="smooth" title="">
-                                                <i class="fa fa-heart"></i>
-                                                My Wishlist
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-md-3">
-                                <div class="header-hotline">
-                                    <div class="item">
-                                        <p>
-                                            <a href="#" class="smooth" title="">
-                                                <i class="fa-regular fa-comments"></i>
-                                                Start 
-                                                <span>LIVE CHAT</span>
-                                            </a>
-                                        </p>
-                                    </div>
-                                    <div class="item p2">
-                                        <p>
-                                            <i class="fa-solid fa-phone-volume"></i>
-                                            <span>service at:</span> 
-                                            <a href="#" class="smooth" title=""><span>+20 1114 567 1690</span></a>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="header-center">
-                    <div class="container centerByFlex">
-                        <div class="col-lg-2 col-md-3 col-sm-12 img">
-                            <a href=""><img src="../img/logo.png" alt=""></a>
-                        </div>
-                        <div class="col-lg-5 col-md-2 col-sm-12 search-form centerByFlex">
-                            <button class="smooth search-form-btn left hidden" type="button"><i class="fa fa-search"></i></button>
-                            <form class="col-sm-12 centerByFlex" action="#" method="post">
-                                <div class="col-sm-2 icon centerByFlex"> <i class="fa fa-search" aria-hidden="true"></i> </div>
-                                <input class="col-sm-7" type="text" name="keyword" placeholder="Enter your keyword...">
-                                <button class="col-sm-3" type="submit">Search</button>
-                            </form>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-sm-12 shipping centerByFlex">
-                            <img src="../img/shipping-bg.png" alt="">
-                            <div class="shipping-info">
-                                <h6 class="shipping-title">Everyday Free Shipping</h6>
-                                <p class="shipping-desc">&amp; No Sales Tax</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-2 col-md-3 col-sm-12 cart">
-                            <a href="cart.html" class="smooth cart-box dropdown-toggle" title="" data-toggle="dropdown">
-                                <img src="../img/cart.png" class="cart-image" alt="">
-                                <p class="quantity">0 item(s) - $0.00</p>
-                                <p class="cart-title">MY CART</p>
-                            </a>
-                            <ul class="dropdown-menu shopping-cart hidden">
-                                <li class="shopping-cart-title clearfix">
-                                    <label>Your Product</label>
-                                    <label>Price</label>
-                                </li>
-                                <li class="product-item">
-                                    <table class="table cart-table">
-                                        <tbody>
-                                            <tr>
-                                                <td class="product-item-image">
-                                                    <a href="detail.html" class="" title=""><img src="image/catalog/demo/products/cart-product1.png" alt="" class="img-responsive"></a>
-                                                    <button class="remove-product-cart smooth"><i class="fa fa-times"></i></button>
-                                                </td>
-                                                <td class="product-item-name">
-                                                    <h4 class="product-name"><a href="detail.html" class="smooth" title="">Diam noumea nibs</a></h4>
-                                                    <span class="product-item-quantity">Quantity: 01</span>
-                                                </td>
-                                                <td class="product-item-price"><span class="shopping-price">$320.00</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="product-item-image">
-                                                    <a href="detail.html" class="" title=""><img src="image/catalog/demo/products/cart-product2.png" alt="" class="img-responsive"></a>
-                                                    <button class="remove-product-cart smooth"><i class="fa fa-times"></i></button>
-                                                </td>
-                                                <td class="product-item-name">
-                                                    <h4 class="product-name"><a href="detail.html" class="smooth" title="">Diam noumea nibs</a></h4>
-                                                    <span class="product-item-quantity">Quantity: 01</span>
-                                                </td>
-                                                <td class="product-item-price">
-                                                    <span class="shopping-price">$450.00</span>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="product-item-image">
-                                                    <a href="detail.html" class="" title=""><img src="image/catalog/demo/products/cart-product3.png" alt="" class="img-responsive"></a>
-                                                    <button class="remove-product-cart smooth"><i class="fa fa-times"></i></button>
-                                                </td>
-                                                <td class="product-item-name">
-                                                    <h4 class="product-name"><a href="detail.html" class="smooth" title="">Diam noumea nibs</a></h4>
-                                                    <span class="product-item-quantity">Quantity: 01</span>
-                                                </td>
-                                                <td class="product-item-price"><span class="shopping-price">$250.00</span></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </li>
-                                <li class="total-price clearfix">
-                                    <label class="total-title">TOTAL:</label>
-                                    <label class="float-right">$1030.00</label>
-                                </li>
-                                <li class="shopping-cart-checkout">
-                                    <a href="cart.html" class="smooth" title="">GO TO CART</a>
-                                    <a href="checkout.html" class="smooth" title="">CHECKOUT</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="bottom">
-                    <div class="container">
-                        <div class="phone centerByFlex">
-                            <div class="p1 col-lg-10 col-md-9">
-                                <ul class="links centerByFlex">
-                                    <li><a href="" class="active"><i class="fa fa-home"></i></a></li>
-                                    <li><a href="">LAYOUTS</a></li>
-                                    <li><a href="">FEATURES</a></li>
-                                    <li><a href="">CATEGORY</a></li>
-                                    <li><a href="">blog</a></li>
-                                    <li><a href="">pages</a></li>                            
-                                    <li><a href="">hot deals</a></li>                            
-                                </ul>
-                            </div>
-                            <div class="phone-menu">
-                                <i class="fa-solid fa-bars"></i>
-                            </div>
-                            <div class="p2 col-lg-2 col-md-3">
-                                <ul class="centerByFlex">
-                                    <li><a href="" class="smooth" title=""><i class="fa-brands fa-facebook-f"></i></a></li>
-                                    <li><a href="" class="smooth" title=""><i class="fa fa-wifi" ></i></a></li>
-                                    <li><a href="" class="smooth" title=""><i class="fa-brands fa-twitter"></i></a></li>
-                                    <li><a href="" class="smooth" title=""><i class="fa-brands fa-google-plus-g"></i></a></li>
-                                    <li><a href="" class="smooth" title=""><i class="fa-solid fa-podcast"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+            <ul class="contact-me d-center">
+                <li><a href="https://github.com/Roshdy0"><i class="fa-brands fa-github"></i></a></li>
+                <li><a href="https://wa.me/+0201117651690"><i class="fa-brands fa-whatsapp"></i></a></li>
+                <li><a href="mailto:roshdy.mammdouh@gmail.com"><i class="fa-brands fa-google"></i></a></li>
+                <li><a href="https://www.facebook.com/Roshdy.mammdouh/"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/roshdi-mammdoh-27a004209/"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            </ul>
+            <div class="col-lg-12 col-sm-12 col-xs-12">
+                <div class="copyright">
+                    Furnicom HTML © 2025 Demo Store. All Rights Reserved. Designed by <a href="#" >Roshdy Mammdouh</a>
                 </div>
             </div>
         </div>
-        <!-- End Nav Bar -->
-
-        <!-- Start Landing -->
-        <div class="landing">
-            <div class=" owl-carousel owl-theme ">
-                <div class=" item slider">
-                    <div class="img"><img src="../img/home-slider.png" alt=""></div>
-                    <div class="slider-info">
-                        <div class="container">
-                            <h3 class="small-title">FURNITURE</h3>
-                            <h4 class="small-desc">Survive The Reality Of Everyday Life</h4>
-                            <h2 class="big-title">COLLECTION</h2>
-                            <div class=""><a href="" class="button smooth ">SHOP NOW</a></div>
-                        </div>
-                    </div>
-                </div>
-                <div class=" item slider">
-                    <div class="img"><img src="../img/home-slider.png" alt=""></div>
-                    <div class="slider-info">
-                        <div class="container">
-                            <h3 class="small-title">FURNITURE</h3>
-                            <h4 class="small-desc">Survive The Reality Of Everyday Life</h4>
-                            <h2 class="big-title">COLLECTION</h2>
-                            <div class=""><a href="" class="button smooth ">SHOP NOW</a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Landing -->
-
-        <!-- Start Deal -->
-        <div class="deal">
-            <div class="container centerByFlex">
-                <div class="day col-lg-3 col-md-3 col-sm-4">
-					<h4 class="title">Deals Of The Days </h4>
-					<div class="desc">
-						<p>Maurist ut incident nisi, id auctors libero. Team aliquot felid et consectetur faucet's. Present aliquam, lec tempus consequent, felid quam venerates ligula</p>
-						<ul class="room">
-							<li class="room-box">
-								<a href="" class="smooth" >
-									<img src="../img/room.png" alt="">
-									<h5 class="room-title">LIVING ROOM</h5>
-								</a>
-							</li>
-							<li class="room-box">
-								<a href="" class="smooth" >
-									<img src="../img/room2.png" alt="">
-									<h5 class="room-title">kitchen</h5>
-								</a>
-							</li>
-							<li class="room-box">
-								<a href="" class="smooth" >
-									<img src="../img/room3.png" alt="">
-									<h5 class="room-title">WORK PLACE</h5>
-								</a>
-							</li>
-							<li class="room-box">
-								<a href="" class="smooth">
-									<img src="../img/room4.png" alt="">
-									<h5 class="room-title">WARDROBE</h5>
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-                <div class="offer col-lg-6 col-md-5 col-sm-8">
-                    <div class="slid">
-                        <div class="timer">
-                            <div class="countdown" data-countdown="2019/12/15">
-                                <div class="box">
-                                    <span class="time days"></span> 
-                                    <span class="text">DAYS</span> 
-                                </div> 
-                                <div class="box">
-                                    <span class="time hours"></span> 
-                                    <span class="text">HOURS</span>
-                                </div> 
-                                <div class="box">
-                                    <span class="time  minutes"></span> 
-                                    <span class="text">MINS</span> 
-                                </div> 
-                                <div class="box">
-                                    <span class="time seconds"></span> 
-                                    <span class="text">SECS</span> 
-                                </div> 
-                            </div>
-                        </div>
-                        <div class="product offer-owl owl-carousel owl-theme">
-                            <div class="product-slid">
-                                <div class="img">
-                                    <a href="" class="hv-light"><img src="../img/product.png" alt=""></a>
-                                </div>
-                                <h5 class="name">Donee vel venerates</h5>
-                                <div class="price">
-                                    $115.00 
-                                    <span class="old">$142.00</span>
-                                </div>
-                                <div class="rating">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                </div>
-                                <span class="new">NEW!</span>
-                            </div>
-                            <div class="product-slid">
-                                <div class="img">
-                                    <a href="" class="hv-light"><img src="../img/product.png" alt=""></a>
-                                </div>
-                                <h5 class="name">Donee vel venerates</h5>
-                                <div class="price">
-                                    $115.00 
-                                    <span class="old">$142.00</span>
-                                </div>
-                                <div class="rating">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                </div>
-                                <span class="new">NEW!</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>                    
-                <div class="popular col-lg-3 col-md-4 col-sm-12">
-                    <h4 class="title">popular produce</h4>
-                        <div class="desc">
-                            <div class="big-box centerByFlex">
-                                <div class="img"><a href="" class="hv-radial"><img src="../img/product35.png" alt=""></a></div>
-                                <div class="box">
-                                    <h5 class="name">Donee vel venerates</h5>
-                                    <div class="price">$115.00 <span class="old">$142.00</span></div>
-                                    <div class="rating">
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="big-box centerByFlex">
-                                <div class="img"><a href="" class="hv-radial"><img src="../img/product36.png" alt=""></a></div>
-                                <div class="box">
-                                    <h5 class="name">Donee vel venerates</h5>
-                                    <div class="price">$115.00 <span class="old">$142.00</span></div>
-                                    <div class="rating">
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="big-box centerByFlex">
-                                <div class="img"><a href="" class="hv-radial"><img src="../img/product37.png" alt=""></a></div>
-                                <div class="box">
-                                    <h5 class="name" class="smooth" title="">Donee vel venerates</a></h5>
-                                    <div class="price">$115.00 <span class="old">$142.00</span></div>
-                                    <div class="rating">
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                    </div>
-                                </div>
-                            </div>        
-                        </div>
-                </div>
-                <div class="clearfix"></div>
-            </div>    
-        </div>
-        <!-- End Deal -->
-        
-        <!-- Start Banner -->
-        <div class="banner">
-			<div class="container">
-				<div class="row ">
-					<div class="box col-lg-4 col-md-4 col-sm-12">
-                        <a href="" class="hv-border"><img src="../img/collection.png" class="img-responsive" alt=""></a>
-                    </div>
-					<div class="box col-lg-4 col-md-4 col-sm-12">
-                        <a href="" class="hv-border"><img src="../img/banner2.png" class="img-responsive" alt=""></a>
-                    </div>
-					<div class="box col-lg-4 col-md-4 col-sm-12">
-                        <a href="" class="hv-border"><img src="../img/banner3.png" class="img-responsive" alt=""></a>
-                    </div>
-				</div>
-			</div>
-		</div>
-        <!-- End Banner -->
-
-        <!-- Start Featured -->
-        <div class="featured">
-            <div class="container">
-                <h1 class="title"><span>FEATURED <span>PRODUCTS</span></span></h1>
-                <div class="slid featured-owl owl-carousel owl-theme">
-                    <div class="box">
-                        <div class="img">
-                            <a href="" class="a-img"><img src="../img/product52.png"></a>
-                            <a class="smooth quickview" href=""><i class="fa fa-search"></i></a>
-                        </div>
-                        <div class="info">
-                            <h4 class="name"><a href="" class="smooth">Carabiner turpin orci</a></h4>
-                            <div class="price">$115.00 <span class="old">$142.00</span></div>
-                            <div class="rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>  
-                        </div>
-                        <div class="button-group">
-                            <button class="wishlist-btn smooth"><i class="fa fa-retweet"></i></button>
-                            <button class="add-to-cart smooth">ADD TO CART</button>
-                            <button class="wishlist-btn smooth"><i class="fa fa-heart"></i></button>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="img">
-                            <a href="" class="a-img"><img src="../img/product51.png"></a>
-                            <a class="smooth quickview" href=""><i class="fa fa-search"></i></a>
-                        </div>
-                        <div class="info">
-                            <h4 class="name"><a href="" class="smooth">Carabiner turpin orci</a></h4>
-                            <div class="price">$115.00 <span class="old">$142.00</span>
-                            </div>
-                            <div class="rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>  
-                        </div>
-                        <div class="button-group">
-                            <button class="wishlist-btn smooth"><i class="fa fa-retweet"></i></button>
-                            <button class="add-to-cart smooth">ADD TO CART</button>
-                            <button class="wishlist-btn smooth"><i class="fa fa-heart"></i></button>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="img">
-                            <a href="" class="a-img"><img src="../img/product53.jpg"></a>
-                            <a class="smooth quickview" href=""><i class="fa fa-search"></i></a>
-                        </div>
-                        <div class="info">
-                            <h4 class="name"><a href="" class="smooth">Carabiner turpin orci</a></h4>
-                            <div class="price">$115.00 <span class="old">$142.00</span>
-                            </div>
-                            <div class="rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>  
-                        </div>
-                        <div class="button-group">
-                            <button class="wishlist-btn smooth"><i class="fa fa-retweet"></i></button>
-                            <button class="add-to-cart smooth">ADD TO CART</button>
-                            <button class="wishlist-btn smooth"><i class="fa fa-heart"></i></button>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="img">
-                            <a href="" class="a-img"><img src="../img/product55.jpg"></a>
-                            <a class="smooth quickview" href=""><i class="fa fa-search"></i></a>
-                        </div>
-                        <div class="info">
-                            <h4 class="name"><a href="" class="smooth">Carabiner turpin orci</a></h4>
-                            <div class="price">$115.00 <span class="old">$142.00</span>
-                            </div>
-                            <div class="rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>  
-                        </div>
-                        <div class="button-group">
-                            <button class="wishlist-btn smooth"><i class="fa fa-retweet"></i></button>
-                            <button class="add-to-cart smooth">ADD TO CART</button>
-                            <button class="wishlist-btn smooth"><i class="fa fa-heart"></i></button>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="img">
-                            <a href="" class="a-img"><img src="../img/product56.jpg"></a>
-                            <a class="smooth quickview" href=""><i class="fa fa-search"></i></a>
-                        </div>
-                        <div class="info">
-                            <h4 class="name"><a href="" class="smooth">Carabiner turpin orci</a></h4>
-                            <div class="price">$115.00 <span class="old">$142.00</span>
-                            </div>
-                            <div class="rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>  
-                        </div>
-                        <div class="button-group">
-                            <button class="wishlist-btn smooth"><i class="fa fa-retweet"></i></button>
-                            <button class="add-to-cart smooth">ADD TO CART</button>
-                            <button class="wishlist-btn smooth"><i class="fa fa-heart"></i></button>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="img">
-                            <a href="" class="a-img"><img src="../img/product57.jpg"></a>
-                            <a class="smooth quickview" href=""><i class="fa fa-search"></i></a>
-                        </div>
-                        <div class="info">
-                            <h4 class="name"><a href="" class="smooth">Carabiner turpin orci</a></h4>
-                            <div class="price">$115.00 <span class="old">$142.00</span>
-                            </div>
-                            <div class="rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>  
-                        </div>
-                        <div class="button-group">
-                            <button class="wishlist-btn smooth"><i class="fa fa-retweet"></i></button>
-                            <button class="add-to-cart smooth">ADD TO CART</button>
-                            <button class="wishlist-btn smooth"><i class="fa fa-heart"></i></button>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="img">
-                            <a href="" class="a-img"><img src="../img/product58.jpg"></a>
-                            <a class="smooth quickview" href=""><i class="fa fa-search"></i></a>
-                        </div>
-                        <div class="info">
-                            <h4 class="name"><a href="" class="smooth">Carabiner turpin orci</a></h4>
-                            <div class="price">$115.00 <span class="old">$142.00</span>
-                            </div>
-                            <div class="rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>  
-                        </div>
-                        <div class="button-group">
-                            <button class="wishlist-btn smooth"><i class="fa fa-retweet"></i></button>
-                            <button class="add-to-cart smooth">ADD TO CART</button>
-                            <button class="wishlist-btn smooth"><i class="fa fa-heart"></i></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Featured -->
-
-        <!-- Start Information -->
-        <div class="information">
-			<div class="container">
-                <div class="centerByFlex">
-                    <div class="box centerByFlex col-4">
-                        <div class="img"><img src="../img/infomation-image.png" ></div>
-                        <div class="desc">
-                            <h6 class="title">FREE SHIPPING</h6>
-                            <p class="detail">Vestibule dolor purus portal</p>
-                        </div>
-                    </div>
-                    <div class="box centerByFlex col-4">
-                        <div class="image"><img src="../img/infomation-image2.png" class="img-responsive" alt=""></div>
-                        <div class="desc">
-                            <h6 class="title">MONEY BACK GUARANTEE</h6>
-                            <p class="detail">Vestibule dolor purus portal</p>
-                        </div>
-                    </div>
-                    <div class="box centerByFlex col-4">
-                        <div class="image"><img src="../img/infomation-image3.png" class="img-responsive" alt=""></div>
-                        <div class="desc">
-                            <h6 class="title">24 HOURS SUPPORT</h6>
-                            <p class="detail">Vestibule dolor purus portal</p>
-                        </div>
-                    </div>
-                </div>
-			</div>
-		</div>
-        <!-- End Information -->
-        
-        <!-- Start Featured -->
-        <div class="featured">
-            <div class="container">
-                <h3 class="title">
-                    <span>BEST <span>SELLER</span></span>
-                </h3>
-                <div class="slid featured-owl owl-carousel owl-theme">
-                    <div class="box">
-                        <div class="img">
-                            <a href="" class="a-img"><img src="../img/product52.png"></a>
-                            <a class="smooth quickview" href=""><i class="fa fa-search"></i></a>
-                        </div>
-                        <div class="info">
-                            <h4 class="name"><a href="" class="smooth">Carabiner turpin orci</a></h4>
-                            <div class="price">$115.00 <span class="old">$142.00</span>
-                            </div>
-                            <div class="rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>  
-                        </div>
-                        <div class="button-group">
-                            <button class="wishlist-btn smooth"><i class="fa fa-retweet"></i></button>
-                            <button class="add-to-cart smooth">ADD TO CART</button>
-                            <button class="wishlist-btn smooth"><i class="fa fa-heart"></i></button>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="img">
-                            <a href="" class="a-img"><img src="../img/product51.png"></a>
-                            <a class="smooth quickview" href=""><i class="fa fa-search"></i></a>
-                        </div>
-                        <div class="info">
-                            <h4 class="name"><a href="" class="smooth">Carabiner turpin orci</a></h4>
-                            <div class="price">$115.00 <span class="old">$142.00</span>
-                            </div>
-                            <div class="rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>  
-                        </div>
-                        <div class="button-group">
-                            <button class="wishlist-btn smooth"><i class="fa fa-retweet"></i></button>
-                            <button class="add-to-cart smooth">ADD TO CART</button>
-                            <button class="wishlist-btn smooth"><i class="fa fa-heart"></i></button>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="img">
-                            <a href="" class="a-img"><img src="../img/product53.jpg"></a>
-                            <a class="smooth quickview" href=""><i class="fa fa-search"></i></a>
-                        </div>
-                        <div class="info">
-                            <h4 class="name"><a href="" class="smooth">Carabiner turpin orci</a></h4>
-                            <div class="price">$115.00 <span class="old">$142.00</span>
-                            </div>
-                            <div class="rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>  
-                        </div>
-                        <div class="button-group">
-                            <button class="wishlist-btn smooth"><i class="fa fa-retweet"></i></button>
-                            <button class="add-to-cart smooth">ADD TO CART</button>
-                            <button class="wishlist-btn smooth"><i class="fa fa-heart"></i></button>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="img">
-                            <a href="" class="a-img"><img src="../img/product55.jpg"></a>
-                            <a class="smooth quickview" href=""><i class="fa fa-search"></i></a>
-                        </div>
-                        <div class="info">
-                            <h4 class="name"><a href="" class="smooth">Carabiner turpin orci</a></h4>
-                            <div class="price">$115.00 <span class="old">$142.00</span>
-                            </div>
-                            <div class="rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>  
-                        </div>
-                        <div class="button-group">
-                            <button class="wishlist-btn smooth"><i class="fa fa-retweet"></i></button>
-                            <button class="add-to-cart smooth">ADD TO CART</button>
-                            <button class="wishlist-btn smooth"><i class="fa fa-heart"></i></button>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="img">
-                            <a href="" class="a-img"><img src="../img/product56.jpg"></a>
-                            <a class="smooth quickview" href=""><i class="fa fa-search"></i></a>
-                        </div>
-                        <div class="info">
-                            <h4 class="name"><a href="" class="smooth">Carabiner turpin orci</a></h4>
-                            <div class="price">$115.00 <span class="old">$142.00</span>
-                            </div>
-                            <div class="rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>  
-                        </div>
-                        <div class="button-group">
-                            <button class="wishlist-btn smooth"><i class="fa fa-retweet"></i></button>
-                            <button class="add-to-cart smooth">ADD TO CART</button>
-                            <button class="wishlist-btn smooth"><i class="fa fa-heart"></i></button>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="img">
-                            <a href="" class="a-img"><img src="../img/product57.jpg"></a>
-                            <a class="smooth quickview" href=""><i class="fa fa-search"></i></a>
-                        </div>
-                        <div class="info">
-                            <h4 class="name"><a href="" class="smooth">Carabiner turpin orci</a></h4>
-                            <div class="price">$115.00 <span class="old">$142.00</span>
-                            </div>
-                            <div class="rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>  
-                        </div>
-                        <div class="button-group">
-                            <button class="wishlist-btn smooth"><i class="fa fa-retweet"></i></button>
-                            <button class="add-to-cart smooth">ADD TO CART</button>
-                            <button class="wishlist-btn smooth"><i class="fa fa-heart"></i></button>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="img">
-                            <a href="" class="a-img"><img src="../img/product58.jpg"></a>
-                            <a class="smooth quickview" href=""><i class="fa fa-search"></i></a>
-                        </div>
-                        <div class="info">
-                            <h4 class="name"><a href="" class="smooth">Carabiner turpin orci</a></h4>
-                            <div class="price">$115.00 <span class="old">$142.00</span>
-                            </div>
-                            <div class="rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>  
-                        </div>
-                        <div class="button-group">
-                            <button class="wishlist-btn smooth"><i class="fa fa-retweet"></i></button>
-                            <button class="add-to-cart smooth">ADD TO CART</button>
-                            <button class="wishlist-btn smooth"><i class="fa fa-heart"></i></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Featured -->
-
-        <!-- Start Opinion -->
-        <div class="opinion">
-            <div class="container ">
-                <div class="opinion-owl owl-carousel owl-theme">
-                    <div class="slid row">
-                        <div class="img"><img src="../img/avatar.png" alt=""></div>
-                        <div class="info">
-                            <p class="detail">Fusee lorem ante, condiment's in massa, posturer biennium. Maecenas elision voluptate eu rhonchus. Pellentesque commode posturer maximums. Phallus pellentesque pellentesque facilities.</p>
-                            <p class="name"><span>JOHN DOE - Designer</span></p>						
-                        </div>
-                    </div>
-                    <div class="slid row">
-                        <div class="img"><img src="../img/avatar.png" alt=""></div>
-                        <div class="info">
-                            <p class="detail">Fusee lorem ante, condiment's in massa, posturer biennium. Maecenas elision voluptate eu rhonchus. Pellentesque commode posturer maximums. Phallus pellentesque pellentesque facilities.</p>
-                            <p class="name"><span>JOHN DOE - Designer</span></p>						
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Opinion -->
-
-        <!-- Start Categories -->
-        <div class="categories">
-            <div class="container center">
-                <div class="col-md-4 col-sm-12 col left">
-                    <div class="sub">
-                        <img src="../img/category1.jpg" alt="">
-                        <div class="list">
-                            <h5 class="title"><span>DINING ROOM</span></h5>
-                            <ul>
-                                <li><a href="#" class="smooth" title="">Large Coffee Tables</a></li>
-                                <li><a href="#" class="smooth" title="">Small Coffee Tables</a></li>
-                                <li><a href="#" class="smooth" title="">Coffee Table sets</a></li>
-                                <li><a href="#" class="smooth" title="">End Tables</a></li>
-                                <li><a href="#" class="smooth" title="">Console Tables</a></li>
-                                <li><a href="#" class="smooth" title="">Set Of Tables</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="sub another">
-                        <img src="../img/category3.png" alt="">
-                        <div class="list">
-                            <h5 class="title"><span>KITCHEN ROOM</span></h5>
-                            <ul>
-                                <li><a href="#" class="smooth" title="">End Tables</a></li>
-                                <li><a href="#" class="smooth" title="">Console Tables</a></li>
-                                <li><a href="#" class="smooth" title="">Set Of Tables</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-12 col left">
-                    <div class="hot ">
-                        <h4 class="title"><span>HOT <span>CATEGORIES</span></span></h4>
-                        <p class="hot-desc">Duis elision eu nibs at phaedra. Vivants placenta ac metes et placenta. Nulla molestie massa id est posuere, maximums hendrerit est rhoncus.</p>
-                        <a href="category.html" class="smooth hv-border-inline">VIEW ALL CATEGORIES</a>
-                    </div>
-                    <div class="sub">
-                        <img src="../img/category4.png"alt="">
-                        <div class="list">
-                            <h5 class="title"><span>KITCHEN ROOM</span></h5>
-                            <ul>
-                                <li><a href="#" class="smooth" title="">End Tables</a></li>
-                                <li><a href="#" class="smooth" title="">Console Tables</a></li>
-                                <li><a href="#" class="smooth" title="">Set Of Tables</a></li>
-                                <li><a href="#" class="smooth" title="">End Tables</a></li>
-                                <li><a href="#" class="smooth" title="">Console Tables</a></li>
-                                <li><a href="#" class="smooth" title="">Set Of Tables</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-12 col right">
-                    <div class="sub another">
-                        <img src="../img/category2.png"alt="">
-                        <div class="list">
-                            <h5 class="title"><span>KITCHEN ROOM</span></h5>
-                            <ul>
-                                <li><a href="#" class="smooth" title="">End Tables</a></li>
-                                <li><a href="#" class="smooth" title="">Console Tables</a></li>
-                                <li><a href="#" class="smooth" title="">Set Of Tables</a></li>
-                                <li><a href="#" class="smooth" title="">End Tables</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="sub another">
-                        <img src="../img/category5.png"alt="">
-                        <div class="list">
-                            <h5 class="title"><span>KITCHEN ROOM</span></h5>
-                            <ul>
-                                <li><a href="#" class="smooth" title="">End Tables</a></li>
-                                <li><a href="#" class="smooth" title="">Console Tables</a></li>
-                                <li><a href="#" class="smooth" title="">Set Of Tables</a></li>
-                                <li><a href="#" class="smooth" title="">End Tables</a></li>
-                                <li><a href="#" class="smooth" title="">Console Tables</a></li>
-                                <li><a href="#" class="smooth" title="">Set Of Tables</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="clearfix"></div>
-        </div>
-        <!-- End Categories -->
-
-        <!-- Start New Letter -->
-        <div class="newsletter">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-sm-12 left">
-                        <h4 class="title">NEED HELP? CALL OUR AWARD-WINNING </h4>
-                        <p>SUPPORT TEAM 24/7 AT <a href="tel:01117651690">0111- 765-1690</a></p>
-                    </div>
-                    <div class="col-md-6 col-sm-12 right">
-                        <form action="" class="centerByFlex">
-                            <input type="text" name="email" placeholder="Enter your email address" class="form-control">
-                            <button type="submit" class="form-control">SUBSCRIBE</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-            <div class="clearfix"></div>
-        </div>
-        <!-- End New Letter -->
-
-        <!-- Start Footer -->
-        <div class="footer">
-            <div class="container">
-                <div class="top">
-                    <div class="row">
-                        <div class="col-lg-3 col-md-6 col-sm-6">
-                            <div class="box">
-                                <h3 class="title">our service</h3>
-                                <ul class="list">
-                                    <li> <a href="#" class="smooth" title="">Delivery Information</a> </li>
-                                    <li> <a href="#" class="smooth" title="">Returns</a> </li>
-                                    <li> <a href="#" class="smooth" title="">Terms &amp; Conditions</a> </li>
-                                    <li> <a href="#" class="smooth" title="">Shipping &amp; Refund</a> </li>
-                                    <li> <a href="#" class="smooth" title="">Specials</a> </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6">
-                            <div class="box">
-                                <h3 class="title">Extras</h3>
-                                <ul class="list">
-                                    <li> <a href="#" class="smooth" title="">Contact Us</a> </li>
-                                    <li> <a href="#" class="smooth" title="">return</a> </li>
-                                    <li> <a href="#" class="smooth" title="">special</a> </li>
-                                    <li> <a href="#" class="smooth" title="">brands</a> </li>
-                                    <li> <a href="#" class="smooth" title="">gift voucher</a> </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6">
-                            <div class="box">
-                                <h3 class="title">my account</h3>
-                                <ul class="list">
-                                    <li> <a href="#" class="smooth" title="">my order</a> </li>
-                                    <li> <a href="#" class="smooth" title="">My credit slips</a> </li>
-                                    <li> <a href="#" class="smooth" title="">My addresses</a> </li>
-                                    <li> <a href="#" class="smooth" title="">My personal info</a> </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6">
-                            <div class="box special">
-                                <h3 class="title">contact us</h3>
-                                <ul class="list">
-                                    <li> 
-                                        <i class="fa-solid fa-location-dot"></i>
-                                        Egypt - cairo
-                                    </li>
-                                    <li> 
-                                        <i class="fa-solid fa-mobile-screen-button"></i>
-                                        <a href="tel:(+20)-111765169">(+20)-111 765 1690</a> 
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-envelope"></i>
-                                        <a href="mailto:roshdy.mammdouh@gmail.com">roshdy@gmail.com</a>
-                                    </li>
-                                </ul>
-                                <div class="payment">
-                                    <img src="../img/paymen.png" class="img-responsive" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="bottom">
-                    <div class="row">
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                            <div class="right">
-                                <h6 class="title"> Download Our App </h6>
-                                <a href="#">
-                                    <img src="../img/down-app.png" class="img-responsive" alt="">
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                            <div class="left">
-                                <h6 class="title"> Follow Us </h6>
-                                <ul>
-                                    <li> <a href="#" class="smooth"> <i class="fa-brands fa-facebook-f"></i> </a> </li>
-                                    <li> <a href="#" class="smooth"> <i class="fa-brands fa-twitter"></i> </a> </li>
-                                    <li> <a href="#" class="smooth"> <i class="fa fa-wifi"></i> </a> </li>
-                                    <li> <a href="#" class="smooth"> <i class="fa-brands fa-google-plus-g"></i> </a> </li>
-                                    <li> <a href="#" class="smooth"> <i class="fa-brands fa-pinterest"></i> </a> </li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-12 col-sm-12 col-xs-12">
-                            <div class="copyright text-center">
-                                Furnicom HTML © 2022 Demo Store. All Rights Reserved. Designed by
-                                <a href="https://www.roshdy.mammdouh.com/" target="_blank" class="smooth">Roshdy.com</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Footer -->
-
-        <!-- Start Back To Top -->
-        <!-- <div class="back-to-top smooth""><i class="fa fa-angle-up"></i></div> -->
-        <!-- End Back To Top -->
 
         <script src="../../../library/jquery.js"></script>
+        <script src="../../..//library/Font Awesome/all.min.js"></script>
         <script src="../../../library/Bootstrap/bootstrap.bundle.js"></script>
         <script src="../../../library/OwlCarousel2-2.3.4/owl.carousel.min.js"></script>
         <script src="../js/furnicom.js"></script>

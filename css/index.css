@@ -60,6 +60,8 @@ body{
     left: 50%;
     font-size: 90px;
     font-weight: 700;
+    width: -webkit-max-content;
+    width: -moz-max-content;
     width: max-content;
     transform: translateX(-50%);
     color: rgba(21, 27, 41, 0.5);
@@ -85,25 +87,46 @@ body{
     width: 100%;
 }
 
-.effectSlideOne{ animation: effectSlideOne 5s; }
+.effectSlideOne{ -webkit-animation: effectSlideOne 5s; animation: effectSlideOne 5s; }
+@-webkit-keyframes effectSlideOne{
+    0%{ transform: translateX(-150%); }
+    50%{ transform: translateX(0); }
+    100%{ transform: translateX(150%); }
+}
 @keyframes effectSlideOne{
     0%{ transform: translateX(-150%); }
     50%{ transform: translateX(0); }
     100%{ transform: translateX(150%); }
 }
-.effectSlideTow{ animation: effectSlideTow 5s; }
+.effectSlideTow{ -webkit-animation: effectSlideTow 5s; animation: effectSlideTow 5s; }
+@-webkit-keyframes effectSlideTow{
+    0%{ transform: translateX(-300%); }
+    50%{ transform: translateX(0); }
+    100%{ transform: translateX(120%); }
+}
 @keyframes effectSlideTow{
     0%{ transform: translateX(-300%); }
     50%{ transform: translateX(0); }
     100%{ transform: translateX(120%); }
 }
-.effectSlideThree{ animation: effectSlideThree 5s; }
+.effectSlideThree{ -webkit-animation: effectSlideThree 5s; animation: effectSlideThree 5s; }
+@-webkit-keyframes effectSlideThree{
+    0%{ transform: translateX(-400%); }
+    50%{ transform: translateX(0); }
+    100%{ transform: translateX(100%); }
+}
 @keyframes effectSlideThree{
     0%{ transform: translateX(-400%); }
     50%{ transform: translateX(0); }
     100%{ transform: translateX(100%); }
 }
-.effectPortfoilo{ animation: effectPortfolio 20s; }
+.effectPortfoilo{ -webkit-animation: effectPortfolio 20s; animation: effectPortfolio 20s; }
+@-webkit-keyframes effectPortfolio {
+    0%{ transform: translateX(-100%); }
+    50%{ transform: translateX(0); }
+    75%{ transform: translateX(0); }
+    100%{ transform: translateX(100%); } 
+}
 @keyframes effectPortfolio {
     0%{ transform: translateX(-100%); }
     50%{ transform: translateX(0); }
@@ -166,6 +189,8 @@ body{
 .header .linksPhone ul li{
     font-size: 20px;
     margin: 0 0 30px 0;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     text-transform: uppercase;
 }
@@ -278,7 +303,7 @@ body{
 /* Info */
 .about .info .name{
     font-size: 36px;
-    color: #fdfeff;
+    color: var(--main-color);
 }
 .about .info .jop{
     margin-bottom: 18px;
@@ -351,11 +376,17 @@ body{
     background-color: #101624;
     transition: var(--main-transition);
     border: 1px solid var(--hover-color);
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    -ms-border-radius: 14px;
+    -o-border-radius: 14px;
 }
 .experiencs .box:hover{
     box-shadow: 0 0 20px 10px #8c98a4a6;
 }
 .experiencs .box .company{
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
 }
 .experiencs .box .company a{
@@ -420,6 +451,9 @@ body{
 /* End experiencs */
 
 /* Start PortFolio */
+.portfolio .slideshow .slid img{
+    height: 70vh;
+}
 .portfolio .slideshow .slid .contant .links{
     height: 60px;
     display: flex;

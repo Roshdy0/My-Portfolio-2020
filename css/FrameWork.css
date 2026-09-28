@@ -1,7 +1,7 @@
 /* Start Frame Work */
 :root {
     --main-color: #fdfeff;
-    --hover-color: yellow;
+    --hover-color: #ffff00;
     --background-color: #0a101e;
     --main-transition: all 0.3s ease-in;
 }
@@ -44,13 +44,3 @@ a:hover, i:hover{
     gap: 40px;
 }
 /* End Framework */
-
-/* Screen size & BootStrap width screen :-
-	Extra small	    <  576px	col-
-	Small 	    	>= 576px	col-ms
-	Medium 	    	>= 768px	col-md
-	Large		    >= 998px	col-lg
-	Extra Large	    >= 1200px	col-xl
-	XXL		        >= 1400px 	col-xxl */
-    @media (min-width: 768px) {   }
-/* End Frame Work */

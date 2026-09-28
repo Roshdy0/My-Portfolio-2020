@@ -1,0 +1,57 @@
+<a href="#" class="name">Curabitur turpis orci</a>
+
+1 - Html & Css
+2 - Java Script & JQuery
+
+---------------------------------------------------------------------
+🎯 1. Build REAL projects (most important)
+	- Don’t just follow tutorials—build things from scratch.
+	- Start with:
+		- 📝 To-do app (React)
+		- 🛒 Simple e-commerce (products + cart) [On Work ]
+		- 💬 Chat UI (frontend only first)
+		- 🎮 Small game (like your scratch card idea)
+		- Then level up:
+			- Add login system
+			- Connect to a real API
+			- Store data (localStorage or backend later)
+---------------------------------------------------------------------
+2. Practice daily (like a gym)
+	- Use platforms to sharpen your skills:
+	- Frontend challenges (UI practice)
+	- JavaScript problems (logic)
+	- Try:
+		- Frontend Mentor (UI designs)
+		- Codewars / LeetCode (JS practice)
+		- Even 1–2 problems daily makes a huge difference.
+---------------------------------------------------------------------
+💼 3. Work like a freelancer (even if fake)
+
+	- Pretend you're working for a client:
+	- Example:
+		- “Build a restaurant website”
+		- Then:
+			- Plan pages
+			- Design UI
+			- Build responsive layout
+			- Add animations
+			- This simulates real-world experience
+---------------------------------------------------------------------
+4. Contribute or collaborate
+	- Work with a friend
+	- Join small GitHub projects
+	- Or recreate popular apps (like Netflix UI)
+---------------------------------------------------------------------
+🚀 5. Build a portfolio
+	- Make a personal website with:
+	- Your projects
+	- Live demos
+	- GitHub links
+	- This is what gets you a job—not certificates.
+---------------------------------------------------------------------
+6. Learn what you're missing
+	- Since you know React:
+	- Learn API handling (fetch/axios)
+	- Learn state management
+	- Learn basic backend (Node.js + Express)
+---------------------------------------------------------------------
